@@ -60,7 +60,7 @@ class Game
         input = gets.chomp.to_i
       else
         puts "Computer's turn!"
-        print 'The computer chooses: '
+        puts 'The computer chooses: '
         sleep(1)
         input = rand(1..7)
       end
