@@ -151,7 +151,7 @@ describe Game do
         expect(game).to receive(:print).with('Input the culumn you would like to drop your marker 1-7: ')
         expect(game).to receive(:gets).and_return(valid_input.to_s)
         expect(game).to receive(:place_marker).with(valid_input - 1)
-        game.verify_move(invalid_input.chomp.to_i)
+        game.verify_move(invalid_input.chomp.to_i - 1)
       end
     end
   end

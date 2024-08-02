@@ -76,7 +76,7 @@ class Game
 
       print 'Input the culumn you would like to drop your marker 1-7: '
       input = gets.chomp.to_i
-      place_marker(verify_move(input) - 1)
+      place_marker(verify_move(input - 1))
       switch_marker unless game_over?
       input
     end
